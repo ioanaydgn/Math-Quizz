@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F33108282A0EEE3400270EC4 /* MathQuizzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33108272A0EEE3400270EC4 /* MathQuizzApp.swift */; };
+		F331082A2A0EEE3400270EC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33108292A0EEE3400270EC4 /* ContentView.swift */; };
+		F331082C2A0EEE3500270EC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F331082B2A0EEE3500270EC4 /* Assets.xcassets */; };
+		F331082F2A0EEE3500270EC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F331082E2A0EEE3500270EC4 /* Preview Assets.xcassets */; };
+		F33108392A0EEE3500270EC4 /* MathQuizzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33108382A0EEE3500270EC4 /* MathQuizzTests.swift */; };
+		F33108432A0EEE3500270EC4 /* MathQuizzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33108422A0EEE3500270EC4 /* MathQuizzUITests.swift */; };
+		F33108452A0EEE3500270EC4 /* MathQuizzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33108442A0EEE3500270EC4 /* MathQuizzUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F33108352A0EEE3500270EC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F331081C2A0EEE3400270EC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F33108232A0EEE3400270EC4;
+			remoteInfo = MathQuizz;
+		};
+		F331083F2A0EEE3500270EC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F331081C2A0EEE3400270EC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F33108232A0EEE3400270EC4;
+			remoteInfo = MathQuizz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F33108242A0EEE3400270EC4 /* MathQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33108272A0EEE3400270EC4 /* MathQuizzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizzApp.swift; sourceTree = "<group>"; };
+		F33108292A0EEE3400270EC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F331082B2A0EEE3500270EC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F331082E2A0EEE3500270EC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F33108342A0EEE3500270EC4 /* MathQuizzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathQuizzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33108382A0EEE3500270EC4 /* MathQuizzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizzTests.swift; sourceTree = "<group>"; };
+		F331083E2A0EEE3500270EC4 /* MathQuizzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathQuizzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33108422A0EEE3500270EC4 /* MathQuizzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizzUITests.swift; sourceTree = "<group>"; };
+		F33108442A0EEE3500270EC4 /* MathQuizzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathQuizzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F33108212A0EEE3400270EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33108312A0EEE3500270EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F331083B2A0EEE3500270EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F331081B2A0EEE3400270EC4 = {
+			isa = PBXGroup;
+			children = (
+				F33108262A0EEE3400270EC4 /* MathQuizz */,
+				F33108372A0EEE3500270EC4 /* MathQuizzTests */,
+				F33108412A0EEE3500270EC4 /* MathQuizzUITests */,
+				F33108252A0EEE3400270EC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F33108252A0EEE3400270EC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F33108242A0EEE3400270EC4 /* MathQuizz.app */,
+				F33108342A0EEE3500270EC4 /* MathQuizzTests.xctest */,
+				F331083E2A0EEE3500270EC4 /* MathQuizzUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F33108262A0EEE3400270EC4 /* MathQuizz */ = {
+			isa = PBXGroup;
+			children = (
+				F33108272A0EEE3400270EC4 /* MathQuizzApp.swift */,
+				F33108292A0EEE3400270EC4 /* ContentView.swift */,
+				F331082B2A0EEE3500270EC4 /* Assets.xcassets */,
+				F331082D2A0EEE3500270EC4 /* Preview Content */,
+			);
+			path = MathQuizz;
+			sourceTree = "<group>";
+		};
+		F331082D2A0EEE3500270EC4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F331082E2A0EEE3500270EC4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F33108372A0EEE3500270EC4 /* MathQuizzTests */ = {
+			isa = PBXGroup;
+			children = (
+				F33108382A0EEE3500270EC4 /* MathQuizzTests.swift */,
+			);
+			path = MathQuizzTests;
+			sourceTree = "<group>";
+		};
+		F33108412A0EEE3500270EC4 /* MathQuizzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F33108422A0EEE3500270EC4 /* MathQuizzUITests.swift */,
+				F33108442A0EEE3500270EC4 /* MathQuizzUITestsLaunchTests.swift */,
+			);
+			path = MathQuizzUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F33108232A0EEE3400270EC4 /* MathQuizz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F33108482A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizz" */;
+			buildPhases = (
+				F33108202A0EEE3400270EC4 /* Sources */,
+				F33108212A0EEE3400270EC4 /* Frameworks */,
+				F33108222A0EEE3400270EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathQuizz;
+			productName = MathQuizz;
+			productReference = F33108242A0EEE3400270EC4 /* MathQuizz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F33108332A0EEE3500270EC4 /* MathQuizzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F331084B2A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizzTests" */;
+			buildPhases = (
+				F33108302A0EEE3500270EC4 /* Sources */,
+				F33108312A0EEE3500270EC4 /* Frameworks */,
+				F33108322A0EEE3500270EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F33108362A0EEE3500270EC4 /* PBXTargetDependency */,
+			);
+			name = MathQuizzTests;
+			productName = MathQuizzTests;
+			productReference = F33108342A0EEE3500270EC4 /* MathQuizzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F331083D2A0EEE3500270EC4 /* MathQuizzUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F331084E2A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizzUITests" */;
+			buildPhases = (
+				F331083A2A0EEE3500270EC4 /* Sources */,
+				F331083B2A0EEE3500270EC4 /* Frameworks */,
+				F331083C2A0EEE3500270EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F33108402A0EEE3500270EC4 /* PBXTargetDependency */,
+			);
+			name = MathQuizzUITests;
+			productName = MathQuizzUITests;
+			productReference = F331083E2A0EEE3500270EC4 /* MathQuizzUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F331081C2A0EEE3400270EC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F33108232A0EEE3400270EC4 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F33108332A0EEE3500270EC4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F33108232A0EEE3400270EC4;
+					};
+					F331083D2A0EEE3500270EC4 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = F33108232A0EEE3400270EC4;
+					};
+				};
+			};
+			buildConfigurationList = F331081F2A0EEE3400270EC4 /* Build configuration list for PBXProject "MathQuizz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F331081B2A0EEE3400270EC4;
+			productRefGroup = F33108252A0EEE3400270EC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F33108232A0EEE3400270EC4 /* MathQuizz */,
+				F33108332A0EEE3500270EC4 /* MathQuizzTests */,
+				F331083D2A0EEE3500270EC4 /* MathQuizzUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F33108222A0EEE3400270EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F331082F2A0EEE3500270EC4 /* Preview Assets.xcassets in Resources */,
+				F331082C2A0EEE3500270EC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33108322A0EEE3500270EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F331083C2A0EEE3500270EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F33108202A0EEE3400270EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F331082A2A0EEE3400270EC4 /* ContentView.swift in Sources */,
+				F33108282A0EEE3400270EC4 /* MathQuizzApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33108302A0EEE3500270EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33108392A0EEE3500270EC4 /* MathQuizzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F331083A2A0EEE3500270EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33108452A0EEE3500270EC4 /* MathQuizzUITestsLaunchTests.swift in Sources */,
+				F33108432A0EEE3500270EC4 /* MathQuizzUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F33108362A0EEE3500270EC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F33108232A0EEE3400270EC4 /* MathQuizz */;
+			targetProxy = F33108352A0EEE3500270EC4 /* PBXContainerItemProxy */;
+		};
+		F33108402A0EEE3500270EC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F33108232A0EEE3400270EC4 /* MathQuizz */;
+			targetProxy = F331083F2A0EEE3500270EC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F33108462A0EEE3500270EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F33108472A0EEE3500270EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F33108492A0EEE3500270EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MathQuizz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F331084A2A0EEE3500270EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MathQuizz/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F331084C2A0EEE3500270EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathQuizz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MathQuizz";
+			};
+			name = Debug;
+		};
+		F331084D2A0EEE3500270EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizzTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathQuizz.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MathQuizz";
+			};
+			name = Release;
+		};
+		F331084F2A0EEE3500270EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MathQuizz;
+			};
+			name = Debug;
+		};
+		F33108502A0EEE3500270EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maydgn.MathQuizzUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MathQuizz;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F331081F2A0EEE3400270EC4 /* Build configuration list for PBXProject "MathQuizz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33108462A0EEE3500270EC4 /* Debug */,
+				F33108472A0EEE3500270EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F33108482A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33108492A0EEE3500270EC4 /* Debug */,
+				F331084A2A0EEE3500270EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F331084B2A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F331084C2A0EEE3500270EC4 /* Debug */,
+				F331084D2A0EEE3500270EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F331084E2A0EEE3500270EC4 /* Build configuration list for PBXNativeTarget "MathQuizzUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F331084F2A0EEE3500270EC4 /* Debug */,
+				F33108502A0EEE3500270EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F331081C2A0EEE3400270EC4 /* Project object */;
+}

@@ -14,13 +14,13 @@ struct Question {
 
 struct ContentView: View {
     
-    let questions = [
+    /*@State private var questions = [
         Question(text: "2 + 2 =", answer: "4"),
         Question(text: "5 x 3 =", answer: "15"),
         Question(text: "10 - 7 =", answer: "3")
-    ]
+    ]*/
     
-    @State private var currentQuestion = 0
+    @State private var currentQuestion: Question?
     @State private var score = 0
     @State private var userAnswer = ""
     @State private var showAlert = false
@@ -28,7 +28,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Text(questions[currentQuestion].text)
+            Text(currentQuestion?.text ?? "")
                 .font(.largeTitle)
                 .padding()
             
@@ -57,7 +57,7 @@ struct ContentView: View {
             )
         })
     }
-    
+    /*
     func checkAnswer() {
         let userEnteredAnswer = userAnswer.trimmingCharacters(in: .whitespacesAndNewlines)
         let correctAnswer = questions[currentQuestion].answer
@@ -75,13 +75,41 @@ struct ContentView: View {
             showAlert = true
         }
     }
-
-
-func restartGame() {
-        currentQuestion = 0
+     */
+    func checkAnswer() {
+            let userEnteredAnswer = userAnswer.trimmingCharacters(in: .whitespacesAndNewlines)
+            let correctAnswer = currentQuestion?.answer ?? ""
+            
+            if userEnteredAnswer == correctAnswer {
+                score += 1
+            } else {
+                showAlert = true
+            }
+            
+            generateQuestion()
+            userAnswer = ""
+        }
+        
+        func generateQuestion() {
+            // Soru oluşturulurken buradaki mantığı değiştirebilirsiniz
+            // Örnek olarak, rastgele iki sayı alıp toplama işlemi yapabilirsiniz
+            let randomNumber1 = Int.random(in: 1...10)
+            let randomNumber2 = Int.random(in: 1...10)
+            let questionText = "\(randomNumber1) + \(randomNumber2) ="
+            let correctAnswer = String(randomNumber1 + randomNumber2)
+            
+            currentQuestion = Question(text: questionText, answer: correctAnswer)
+        }
+        
+    
+    func restartGame() {
+        currentQuestion = nil
         score = 0
         userAnswer = ""
         showAlert = false
+
+        generateQuestion()
+        //questions.shuffle()
     }
 }
 

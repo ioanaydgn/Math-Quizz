@@ -1,95 +1,123 @@
 import SwiftUI
 
 struct Question {
-    var text: String
-    var options: [String]
-    var correctOptionIndex: Int
+    let questionText: String
+    let correctAnswer: Int
+    let choices: [Int]
 }
 
 struct ContentView: View {
-    @State private var currentQuestion: Question?
+    @State private var currentQuestion = 0
     @State private var score = 0
     @State private var showAlert = false
+    @State private var alertMessage = ""
+    
+    @State private var questions = [Question]()
     
     var body: some View {
         VStack {
+            Text("Question \(currentQuestion + 1)/\(questions.count)")
+                .font(.headline)
+                .padding()
             
-            Text(currentQuestion?.text ?? "")
-                .font(.largeTitle)
+            Text("Score: \(score)")
+                .font(.subheadline)
                 .padding()
-                .padding()
-            if let options = currentQuestion?.options {
-                ForEach(0..<options.count) { index in
+                .frame(maxWidth: .infinity, alignment: .trailing)
+            
+            if currentQuestion < questions.count {
+                Text(questions[currentQuestion].questionText)
+                    .font(.title)
+                    .padding()
+                
+                ForEach(0..<questions[currentQuestion].choices.count) { index in
                     Button(action: {
-                        checkAnswer(selectedOptionIndex: index)
+                        checkAnswer(index)
                     }) {
-                        Text(options[index])
+                        Text("\(questions[currentQuestion].choices[index])")
                             .font(.title)
                             .padding()
-                            .frame(width: 200)
+                            .frame(maxWidth: 200)
                             .background(Color.blue)
                             .foregroundColor(.white)
                             .cornerRadius(10)
-                        
                     }
-                    .padding(-1)
+                    .disabled(showAlert)
                 }
             }
         }
-        .alert(isPresented: $showAlert, content: {
-            Alert(
-                title: Text("Game Over"),
-                message: Text("Your score: \(score)"),
-                dismissButton: .default(Text("Play Again"), action: {
-                    restartGame()
-                })
-            )
-        })
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Game Over"),
+                  message: Text(alertMessage),
+                  dismissButton: .default(Text("Play Again"), action: {
+                    resetGame()
+                  }))
+        }
         .onAppear {
-            generateQuestion()
+            resetGame()
         }
     }
     
-    func checkAnswer(selectedOptionIndex: Int) {
-        guard let question = currentQuestion else { return }
+    func createRandomQuestion() -> Question {
+        let num1 = Int.random(in: 1...99)
+        let num2 = Int.random(in: 1...99)
+        let operation = ["+", "-", "*"].randomElement()!
+        let correctAnswer: Int
+        var choices = [Int]()
         
-        if selectedOptionIndex == question.correctOptionIndex {
+        switch operation {
+        case "+":
+            correctAnswer = num1 + num2
+        case "-":
+            correctAnswer = num1 - num2
+        case "*":
+            correctAnswer = num1 * num2
+        default:
+            fatalError("Wrong operator!")
+        }
+        choices.append(correctAnswer)
+        
+        while choices.count < 4 {
+            let randomAnswer = Int.random(in: correctAnswer - 5...correctAnswer + 5)
+            if randomAnswer != correctAnswer && !choices.contains(randomAnswer) {
+                choices.append(randomAnswer)
+            }
+        }
+        choices.shuffle()
+        
+        let questionText = "\(num1) \(operation) \(num2) = ?"
+        let question = Question(questionText: questionText, correctAnswer: correctAnswer, choices: choices)
+        return question
+    }
+    
+    func resetGame() {
+        currentQuestion = 0
+        score = 0
+        showAlert = false
+        alertMessage = ""
+        questions.removeAll()
+        for _ in 1...10 {
+            questions.append(createRandomQuestion())
+        }
+    }
+
+    func checkAnswer(_ selectedChoice: Int) {
+        if questions[currentQuestion].correctAnswer == questions[currentQuestion].choices[selectedChoice] {
             score += 1
         } else {
             showAlert = true
+            alertMessage = "Wrong answer! Your score is \(score)"
+            return
         }
         
-        generateQuestion()
-    }
-    
-    func generateQuestion() {
-        
-        let correctOptionIndex = Int.random(in: 0..<4)
-        let correctAnswer = String(Int.random(in: 1...10))
-        
-        var options = [String]()
-        for i in 0..<4 {
-            if i == correctOptionIndex {
-                options.append(correctAnswer)
-            } else {
-                // Yanlış cevapları rastgele seçebilirsiniz
-                let wrongAnswer = String(Int.random(in: 1...10))
-                options.append(wrongAnswer)
-            }
+        if currentQuestion < questions.count - 1 {
+            currentQuestion += 1
+        } else {
+            showAlert = true
+            alertMessage = "Oyun bitti! Skorunuz: \(score)"
         }
-        
-        let questionText = "Which number is correct?"
-        
-        currentQuestion = Question(text: questionText, options: options, correctOptionIndex: correctOptionIndex)
     }
-    
-    func restartGame() {
-        currentQuestion = nil
-        score = 0
-        showAlert = false
-        
-        generateQuestion()
-    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
